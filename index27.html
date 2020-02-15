@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var a = prompt('Введите первое значение', 0); var b = prompt('Введите второе значение', 0);
+
+            if (Number.isFinite(a) == false && Number.isFinite(b) == false){
+                if (Number.isInteger(a)  && Number.isInteger(b)){
+                    var res = ((parseInt(a) + parseInt(a)) == parseInt(b)) ? 'Значения равны' : 'Значения не равны';
+                }
+                else if(Number.isInteger(a)){
+                    var res = ((parseInt(a) + parseInt(a)) === parseFloat(b)) ? 'Значения равны' : 'Значения не равны';
+                }
+                else if(Number.isInteger(b)){
+                    var res = ((parseFloat(a) + parseFloat(a)) === parseInt(b)) ? 'Значения равны' : 'Значения не равны';
+                }
+                else{
+                    var res = ((parseFloat(a) + parseFloat(a)) === parseFloat(b)) ? 'Значения равны' : 'Значения не равны';
+                }
+            }
+            else {
+                var res = ((a + a) == b) ? 'Значения равны' : 'Значения не равны';
+            }
+            document.write(res);
+        </script>
+    </body>
+</html>
