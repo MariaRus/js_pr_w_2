@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <script>
-            var a = 0; var b = 0; var c = 0;
-            while (a <= 0 && b <= 0 && a <= 0 || Number.isNaN(a) == true || Number.isNaN(b) == true){
-                a = parseInt(prompt('Введите первый катет',0));
-                b = parseInt(prompt('Введите второй катет',0));
-                c = parseInt(prompt('Введите гипотенузу',0));
-            }
-            var res = (a * a + b * b == c * c) ? 'Ура: угадали длины сторон треугольника': 'Надо учить теорему';
-            document.write(res);
-        </script>
-    </body>
+<head>
+<title>Оператор ? и его использование</title>
+</head>
+<body>
+	<script>
+		var a = 0; var b = 0; var c = 0;
+		while (a <= 0 && b <= 0 && a <= 0 || Number.isNaN(a) == true || Number.isNaN(b) == true)
+		{
+		var a = prompt('Введите числовое значение для переменной a');
+		var b = prompt('Введите числовое значение для переменной b');
+		var c = prompt('Введите числовое значение для переменной c');
+		}
+		var res = ((a * a + b * b) == (c * c)) ? 'Ура: угадали длины сторон треугольника' : 'Надо учить теорему';
+		alert(res);
+	</script>
+</body>
 </html>
